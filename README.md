@@ -6,7 +6,7 @@
 
 *Манифест deploy.yaml*
 <pre>
- <code>
+ <code class = "yaml">
  apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -41,7 +41,7 @@
 
 Манифест service.yaml
 <pre>
-<code>apiVersion: v1
+<code class = "yaml">apiVersion: v1
 kind: Service
 metadata:
   name: my-service
