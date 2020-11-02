@@ -5,7 +5,9 @@
 Знакомство с кластерной архитектурой на примере kubernetes, а также деплоем приложения в кластер.
 
 *Манифест deploy.yaml*
- ``` apiVersion: apps/v1
+
+ ```yaml 
+ apiVersion: apps/v1
   kind: Deployment
   metadata:
     name: my-deployment
@@ -34,4 +36,21 @@
         hostAliases:
         - ip: "192.168.49.1" # The IP of your VM
           hostnames:
-          - postgres.local 
+          - postgres.local``` 
+          
+
+Манифест service.yaml
+
+```apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  type: NodePort
+  ports:
+    - nodePort: 31317
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: my-app```
