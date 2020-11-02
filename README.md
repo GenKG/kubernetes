@@ -33,4 +33,4 @@
         hostAliases:
         - ip: "192.168.49.1" # The IP of your VM
           hostnames:
-          - postgres.local ```
+          - postgres.local 
