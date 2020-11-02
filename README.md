@@ -6,7 +6,7 @@
 
 *Манифест deploy.yaml*
 <pre>
- <code>yaml 
+ <code>
  apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -37,8 +37,8 @@
         - ip: "192.168.49.1" # The IP of your VM
           hostnames:
           - postgres.local
-          </code> 
-          </pre>
+ </code> 
+</pre>
 
 Манифест service.yaml
 <pre>
