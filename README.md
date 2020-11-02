@@ -4,6 +4,7 @@
 <h4>Цель лабораторной работы</h4> 
 Знакомство с кластерной архитектурой на примере kubernetes, а также деплоем приложения в кластер.
 
+*Манифест deploy.yaml*
  ``` apiVersion: apps/v1
   kind: Deployment
   metadata:
