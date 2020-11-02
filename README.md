@@ -54,6 +54,5 @@ spec:
       protocol: TCP
       targetPort: 8080
   selector:
-    app: my-app
-    </code>
-    </pre>
+    app: my-app</code>
+</pre>
