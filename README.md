@@ -36,8 +36,7 @@
         hostAliases:
         - ip: "192.168.49.1" # The IP of your VM
           hostnames:
-          - postgres.local
- </code> 
+          - postgres.local</code> 
 </pre>
 
 Манифест service.yaml
